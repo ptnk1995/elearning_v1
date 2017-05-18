@@ -1,132 +1,708 @@
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<section class="site-content site-section">
-                <div class="container">
-                    <!-- Portfolio Filter Links -->
-                    <!-- Custom Portfolio functionality is initialized in js/pages/portfolio.js -->
-                    <!-- Add the category value you want each link in .portfolio-filter to filter out in its data-category attribute. Add the value 'all' to show all items -->
-                    <div class="site-block text-center">
-                        <div class="btn-group portfolio-filter">
-                            <a href="javascript:void(0)" class="btn btn-primary active" data-category="all">All</a>
-                            <a href="javascript:void(0)" class="btn btn-primary" data-category="design">Design</a>
-                            <a href="javascript:void(0)" class="btn btn-primary" data-category="development">Development</a>
-                            <a href="javascript:void(0)" class="btn btn-primary" data-category="logo">Logo</a>
-                        </div>
-                    </div>
-                    <!-- END Portfolio Filter Links -->
-
-                    <!-- Portfolio Items -->
-                    <!-- Add the category value for each item in its data-category attribute (for the filter functionality) -->
-                    <div class="row portfolio">
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #1</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #2</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #3</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #4</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #5</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #6</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="development">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #7</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="development">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #8</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #9</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #10</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="development">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #11</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #12</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="development">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #13</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #14</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="development">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #15</strong></span>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
-                            <a href="portfolio_single.html">
-                                <img src="" alt="Image" class="img-responsive">
-                                <span class="portfolio-item-info"><strong>Project #16</strong></span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END Portfolio Items -->
+<style type="text/css">
+  /* line 1, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .navbar .navbar-fixed-top {
+  position: fixed;
+  z-index: 1030;
+  }
+  /* line 5, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .navbar-default {
+  background: white !important;
+  color: #000;
+  font-weight: 600;
+  }
+  /* line 10, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .navbar-default .navbar-nav > li > a {
+  color: #000 !important;
+  font-weight: 600;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+  /* line 15, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .avatar {
+  width: 40px;
+  height: 40px;
+  }
+  /* line 19, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .navbar-default .navbar-nav > li > a:hover {
+  color: red !important;
+  }
+  /* line 22, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .logo {
+  margin-left: 30px;
+  }
+  /* line 25, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .navbar-default .container-fluid .navbar-header img {
+  width: 57px;
+  height: 55px;
+  }
+  /* line 30, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .header {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #ffffff;
+  padding: 7px 10px;
+  border-bottom: 1px solid #f4f4f4;
+  color: #444444;
+  }
+  /* line 40, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .imgcourse {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 12px;
+  }
+  /* line 46, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .scroll {
+  width: 300px;
+  height: 400px;
+  overflow: auto;
+  }
+  /* line 51, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .dropdown-menu li.user-header {
+  background-color: #3c8dbc !important;
+  }
+  /* line 54, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .imgprofile {
+  z-index: 5;
+  height: 90px;
+  width: 90px;
+  border: 3px solid;
+  border-color: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+  }
+  /* line 62, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .box_profile {
+  width: 280px !important;
+  }
+  /* line 65, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .img_profile {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: 100px;
+  margin-top: 10px;
+  }
+  /* line 72, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .name_box_profile {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  margin-top: 10px;
+  text-align: center;
+  }
+  /* line 78, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .user-footer {
+  background-color: #f9f9f9;
+  padding: 10px;
+  }
+  /* line 82, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .pull-left {
+  float: left !important;
+  }
+  /* line 85, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .pull-right {
+  float: right !important;
+  }
+  /* line 88, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .title {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #000;
+  margin-top: 100px;
+  }
+  /* line 98, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .text-muted {
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  }
+  /* line 103, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper #principles .fa-stack {
+  width: 138px;
+  height: 120px;
+  left: -13px;
+  }
+  /* line 108, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .service-heading {
+  margin-top: 50px;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 24px;
+  }
+  /* line 114, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper #counters {
+  padding: 80px 0;
+  background-color: #404040;
+  color: white;
+  }
+  /* line 119, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper #counters .title {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  }
+  /* line 127, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper #counters .content {
+  margin-bottom: 36px;
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  min-height: 0;
+  }
+  /* line 136, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper #counters .counters-v2 {
+  background-color: #505050;
+  text-align: center;
+  padding: 60px 50px;
+  }
+  /* line 141, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper #counters .counters-v2-icon {
+  color: #efefef;
+  font-size: 44px;
+  margin-bottom: 15px;
+  }
+  /* line 146, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper #counters .counters-v2 .counters-v2-title {
+  font-size: 28px;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  }
+  /* line 151, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper #counters .counters-v2 .counters-v2-no {
+  display: block;
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  }
+  /* line 157, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .home-index {
+  background: url(/assets/home.jpg);
+  background-repeat: no-repeat;
+  height: 700px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  }
+  /* line 165, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+  /* line 171, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper .text-content {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+  }
+  /* line 176, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper .text-content .content {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 20px;
+  }
+  /* line 181, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper .text-content .content .content-title {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff;
+  }
+  /* line 191, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper .text-content .content .content-lead-in {
+  text-transform: none;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  }
+  /* line 201, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper .text-content .content .btn-box {
+  width: 200px;
+  }
+  /* line 204, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper .text-content .content .btn-xl {
+  border-color: #e13640;
+  background-color: #e13640;
+  margin: 10px;
+  color: #fff;
+  font-size: 30px;
+  }
+  /* line 211, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .body_wrapper #counters .counters-v2-subtitle {
+  color: #efefef;
+  font-style: italic;
+  font-size: 16px;
+  margin-left: -3px;
+  }
+  /* line 217, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  }
+  /* line 226, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-left {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  }
+  /* line 232, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-center {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+  }
+  /* line 237, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-right {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 60px;
+  }
+  /* line 243, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed h3 span {
+  color: #5383d3;
+  }
+  /* line 246, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+  }
+  /* line 251, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+  }
+  /* line 256, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  }
+  /* line 262, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  }
+  /* line 268, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+  }
+  /* line 280, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  width: 310px;
+  }
+  /* line 287, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+  }
+  /* line 293, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  }
+  /* line 299, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-icons {
+  margin-top: 25px;
+  }
+  /* line 302, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  }
+  /* line 309, /home/sony/Documents/tmg_70/app/assets/stylesheets/custom.css.scss */
+  .footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  }
+</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ElearningV1</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "home", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+    <%= include_gon %>
+  </head>
+  <body>
+    <%= render "layouts/header" %>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+      <%= render "shared/flash" %>
+      <div class="body_wrapper body_home">
+        <div class="home">
+          <div class="container-fluid home-index">
+            <div class="container">
+              <div class="text-content">
+                <div class="content">
+                  <div class="content-title">
+                    learn more. faster.
+                  </div>
+                  <div class="content-lead-in">
+                    <i>FREE classes for experienced engineers</i>
+                  </div>
+                  <a class="page-scroll btn btn-xl btn-box" href="#">Basic</a>
+                  <a class="btn btn-xl btn-box" href="#">Advance</a>
                 </div>
-            </section>
-            <!-- END Content -->
-
-
-<!-- Scroll to top link, initialized in js/app.js - scrollToTop() -->
-
-
+              </div>
+            </div>
+          </div>
+          <section id="principles">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h2 class="title section-heading">
+                    <span class="translation_missing" title="translation missing: en.training">Training</span>
+                  </h2>
+                  <h3 class="section-subheading text-muted">
+                    We want to work with the most dedicated startup engineers and designers. We want to help you become the best you can be, alongside talented peers.
+                  </h3>
+                </div>
+              </div>
+              <div class="row text-center">
+                <div class="col-md-4">
+                  <span class="fa-stack fa-4x">
+                  <img src="/assets/tutorial-4f4487042a16be26927579b4eb5970c7f8199db35d36e741b19cb13a7afdaadf.png" alt="Tutorial">
+                  </span>
+                  <h4 class="service-heading">
+                    Read Tutorials
+                  </h4>
+                  <p class="text-muted">
+                    We'll learn how apps like Facebook, Instagram, and Twitter are built.
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <span class="fa-stack fa-4x">
+                  <img src="/assets/project1-9ba53f2fc6f729e5ead7c3f65e923bd8f70721f0f7746a97a8bbe34508425a09.png" alt="Project1">
+                  </span>
+                  <h4 class="service-heading">
+                    Read Tutorials
+                  </h4>
+                  <p class="text-muted">
+                    You'll be learning and working with the best.
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <span class="fa-stack fa-4x">
+                  <img src="/assets/project2-0e3c883b74108aab8b8c8f6c846641d16d0da420453d6af5e80ce92263bab99d.png" alt="Project2">
+                  </span>
+                  <h4 class="service-heading">
+                    Project 2
+                  </h4>
+                  <p class="text-muted">
+                    You'll build real apps you'll be proud to show to customers and employers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="counters">
+            <div class="container">
+              <div class="row">
+                <div class="text-center">
+                  <h2 class="title">
+                    Developing Developers
+                  </h2>
+                  <h3 class="content">
+                    Master new skills in programming, design and product building.
+                  </h3>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="counters-v2">
+                    <i class="counters-v2-icon fa fa-book"></i>
+                    <figure class="counter color-base counters-v2-no">
+                      37
+                    </figure>
+                    <h4 class="counters-v2-title">
+                      Courses
+                    </h4>
+                    <span class="counters-v2-subtitle">
+                    Completed
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="counters-v2">
+                    <i class="counters-v2-icon fa fa-mortar-board"></i>
+                    <figure class="counter color-base counters-v2-no">
+                      37
+                    </figure>
+                    <h4 class="counters-v2-title">
+                      Trainees
+                    </h4>
+                    <span class="counters-v2-subtitle">
+                    Learning
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="counters-v2">
+                    <i class="counters-v2-icon fa fa-users"></i>
+                    <figure class="counter color-base counters-v2-no">
+                      37
+                    </figure>
+                    <h4 class="counters-v2-title">
+                      Learning
+                    </h4>
+                    <span class="counters-v2-subtitle">
+                    Manage
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <section class="site-content site-section">
+        <div class="container">
+          <!-- Portfolio Filter Links -->
+          <!-- Custom Portfolio functionality is initialized in js/pages/portfolio.js -->
+          <!-- Add the category value you want each link in .portfolio-filter to filter out in its data-category attribute. Add the value 'all' to show all items -->
+          <div class="site-block text-center">
+            <div class="btn-group portfolio-filter">
+              <a href="javascript:void(0)" class="btn btn-primary active" data-category="all">All</a>
+              <a href="javascript:void(0)" class="btn btn-primary" data-category="design">Design</a>
+              <a href="javascript:void(0)" class="btn btn-primary" data-category="development">Development</a>
+              <a href="javascript:void(0)" class="btn btn-primary" data-category="logo">Logo</a>
+            </div>
+          </div>
+          <!-- END Portfolio Filter Links -->
+          <!-- Portfolio Items -->
+          <!-- Add the category value for each item in its data-category attribute (for the filter functionality) -->
+          <div class="row portfolio">
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #1</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #2</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #3</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #4</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #5</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #6</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="development">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #7</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="development">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #8</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #9</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #10</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="development">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #11</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #12</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="development">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #13</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="logo">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #14</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="development">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #15</strong></span>
+              </a>
+            </div>
+            <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
+              <a href="portfolio_single.html">
+              <img src="" alt="Image" class="img-responsive">
+              <span class="portfolio-item-info"><strong>Project #16</strong></span>
+              </a>
+            </div>
+          </div>
+          <!-- END Portfolio Items -->
+        </div>
+      </section>
+      <!-- END Content -->
+      <!-- Scroll to top link, initialized in js/app.js - scrollToTop() -->
+    </div>
+    <% unless user_signed_in? %>
+    <%= render "layouts/sign_in_modal" %>
+    <% end %>
+    <a style="background: #1bbae1; opacity: 0.7" href="#" id="to-top"><i class="fa fa-angle-up"></i></a>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3><span><%= t "company" %></span></h3>
+        <p class="footer-links">
+          <%= link_to t("footer.menu.home"), "#" %>
+          <%= link_to t("footer.menu.blog"), "#" %>
+          <%= link_to t("footer.menu.about"), "#" %>
+          <%= link_to t("footer.menu.faq"), "#" %>
+          <%= link_to t("footer.menu.contact"), "#" %>
+        </p>
+        <p class="footer-company-name">
+          <%= t "footer.company-name" %>
+        </p>
+      </div>
+      <div class="footer-center">
+        <div class="footer-icon">
+          <span>
+          <i class="fa fa-map-marker"></i>
+          </span>
+          <p>
+            <span>
+            <%= t "footer.address" %>
+            </span>
+          </p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p><%= t "footer.phone" %></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <%= link_to t("footer.email"), "#" %>
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span><%= t "footer.introduce" %></span>
+          <%= t "footer.description" %>
+        </p>
+        <div class="footer-icons">
+          <%= link_to t "social.facebook", target: "_blank" do %>
+          <i class="fa fa-facebook"></i>
+          <% end %>
+          <%= link_to "#", target: "_blank" do %>
+          <i class="fa fa-twitter"></i>
+          <% end %>
+          <%= link_to t "social.github", target: "_blank" do %>
+          <i class="fa fa-github"></i>
+          <% end %>
+          <%= link_to t "social.link", target: "_blank" do %>
+          <i class="fa fa-linkedin"></i>
+          <% end %>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
